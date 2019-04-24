@@ -2,16 +2,24 @@ import React from 'react';
 import Header from './Header';
 import MarketScheduleList from './MarketScheduleList';
 import SeasonalProduceList from './SeasonalProduceList';
+import NewMarketScheduleForm from './NewMarketScheduleForm';
+import elephantAndDog from '../assets/images/elephantanddog.jpg';
+
+
+import { Switch, Route } from 'react-router-dom';
 
 
 function App(){
   return (
     <div>
       <Header/>
-      <h3>Market Schedule: </h3>
-      <MarketScheduleList/>
-      <h3>Seasonal Produce: </h3>
-      <SeasonalProduceList/>
+      <img src={elephantAndDog}/>
+      <Switch>
+        <Route exact path='/' component={MarketScheduleList} />
+        <Route path='/seasonalproducelist' component={SeasonalProduceList} />
+        <Route path='/newmarketschedule' component={NewMarketScheduleForm} />
+
+      </Switch>
     </div>
   );
 }

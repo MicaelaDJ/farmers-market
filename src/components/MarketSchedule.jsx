@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 function MarketSchedule(props){
   const marketSchedule = {
     backgroundColor: '#ecf0f1',
