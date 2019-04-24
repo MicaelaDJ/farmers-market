@@ -1,5 +1,7 @@
 import React from 'react';
 import SeasonalProduce from './SeasonalProduce';
+import { Link } from 'react-router-dom';
+
 
 const masterSeasonalProduceList = [
   {
@@ -273,6 +275,8 @@ const masterSeasonalProduceList = [
 function SeasonalProduceList() {
   return(
     <div>
+      <Link to="/">Home</Link> | <Link to="/seasonalproducelist">Seasonal Produce List</Link> | <Link to="/newmarketschedule">Create Market Schedule</Link> | <Link to="/login">Login</Link> | <Link to="/signup">Sign Up</Link> | <Link to="/about">About</Link>
+      <h1>Seasonal Produce List: </h1>
       <hr/>
       {masterSeasonalProduceList.map((seasonalProduce, index) =>
         <SeasonalProduce

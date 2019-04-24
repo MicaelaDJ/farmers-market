@@ -1,5 +1,7 @@
 import React from 'react';
 import MarketSchedule from './MarketSchedule';
+import { Link } from 'react-router-dom';
+
 
 const masterMarketScheduleList = [
   {
@@ -43,6 +45,8 @@ const masterMarketScheduleList = [
 function MarketScheduleList() {
   return (
     <div>
+      <Link to="/">Home</Link> | <Link to="/seasonalproducelist">Seasonal Produce List</Link> | <Link to="/newmarketschedule">Create Market Schedule</Link> | <Link to="/login">Login</Link> | <Link to="/signup">Sign Up</Link> | <Link to="/about">About</Link>
+      <h1>Farmer's Market Schedule: </h1>
       <hr/>
       {masterMarketScheduleList.map((marketSchedule, index) =>
         <MarketSchedule
