@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NewMarketSheduleForm(){
+function NewMarketScheduleForm(){
   return (
     <div>
       <form>
@@ -27,4 +27,4 @@ function NewMarketSheduleForm(){
 }
 
 
-export default NewMarketSheduleForm;
+export default NewMarketScheduleForm;
